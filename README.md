@@ -1,4 +1,7 @@
 # water
+**Documentation:** [![GoDoc](https://godoc.org/github.com/hsheth2/water/github?status.svg)](https://godoc.org/github.com/hsheth2/water)  
+**Build Status:** [![Build Status](https://travis-ci.org/hsheth2/water.svg)](https://travis-ci.org/hsheth2/water)
+
 `water` is a native Go library for [TUN/TAP](http://en.wikipedia.org/wiki/TUN/TAP) interfaces.
 
 `water` is designed to be simple and efficient. It
