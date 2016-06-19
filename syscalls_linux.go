@@ -3,7 +3,6 @@
 package water
 
 import (
-	"os"
 	"strings"
 	"syscall"
 	"unsafe"
@@ -30,7 +29,7 @@ func newTAP(ifName string) (ifce *Interface, err error) {
 	if err != nil {
 		return nil, err
 	}
-	ifce = &Interface{isTAP: true, file: file, name: name}
+	ifce = &Interface{isTAP: true, ReadWriteCloser: file, name: name}
 	return
 }
 
@@ -43,7 +42,7 @@ func newTUN(ifName string) (ifce *Interface, err error) {
 	if err != nil {
 		return nil, err
 	}
-	ifce = &Interface{isTAP: false, file: file, name: name}
+	ifce = &Interface{isTAP: false, ReadWriteCloser: file, name: name}
 	return
 }
 
