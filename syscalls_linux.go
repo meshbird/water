@@ -3,6 +3,7 @@
 package water
 
 import (
+	"os"
 	"strings"
 	"syscall"
 	"unsafe"
