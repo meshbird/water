@@ -4,7 +4,7 @@
 
 `water` is a native Go library for [TUN/TAP](http://en.wikipedia.org/wiki/TUN/TAP) interfaces.
 
-`water` is designed to be simple and efficient. It
+`water` is designed to be simple and efficient. It:
 
 * wraps almost only syscalls and uses only Go standard types;
 * exposes standard interfaces; plays well with standard packages like `io`, `bufio`, etc..
