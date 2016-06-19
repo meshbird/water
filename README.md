@@ -1,6 +1,6 @@
 # water
-**Documentation:** [![GoDoc](https://godoc.org/github.com/hsheth2/water/github?status.svg)](https://godoc.org/github.com/hsheth2/water)  
-**Build Status:** [![Build Status](https://travis-ci.org/hsheth2/water.svg)](https://travis-ci.org/hsheth2/water)
+**Documentation:** [![GoDoc](https://godoc.org/github.com/meshbird/water/github?status.svg)](https://godoc.org/github.com/meshbird/water)  
+**Build Status:** [![Build Status](https://travis-ci.org/meshbird/water.svg)](https://travis-ci.org/meshbird/water)
 
 `water` is a native Go library for [TUN/TAP](http://en.wikipedia.org/wiki/TUN/TAP) interfaces.
 
@@ -14,14 +14,14 @@
 
 ## Installation
 ```
-go get -u github.com/songgao/water
-go get -u github.com/songgao/water/waterutil
+go get -u github.com/meshbird/water
+go get -u github.com/meshbird/water/waterutil
 ```
 
 ## Documentation
-[http://godoc.org/github.com/songgao/water](http://godoc.org/github.com/songgao/water)
+[http://godoc.org/github.com/meshbird/water](http://godoc.org/github.com/meshbird/water)
 
-[http://godoc.org/github.com/songgao/water/waterutil](http://godoc.org/github.com/songgao/water/waterutil)
+[http://godoc.org/github.com/meshbird/water/waterutil](http://godoc.org/github.com/meshbird/water/waterutil)
 
 ## Example
 
@@ -29,8 +29,8 @@ go get -u github.com/songgao/water/waterutil
 package main
 
 import (
-	"github.com/songgao/water"
-	"github.com/songgao/water/waterutil"
+	"github.com/meshbird/water"
+	"github.com/meshbird/water/waterutil"
 	"fmt"
 )
 
