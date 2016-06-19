@@ -9,7 +9,6 @@ import "C"
 
 import (
 	"errors"
-	"fmt"
 	"os"
 	"syscall"
 	"unsafe"
@@ -67,11 +66,6 @@ func createInterface(ifName string) (createdIFName string, file *os.File, err er
 			continue
 		} else {
 			createdIFName = C.GoStringN(readBuf, C.int(readBufLen))
-
-			fmt.Printf("Try num: %d\n", utunnum)
-			fmt.Printf("Fd: %d\n", conn.Fd)
-			fmt.Printf("Dev name: %s [%d]\n", createdIFName, readBufLen)
-
 			file = os.NewFile(uintptr(conn.Fd), createdIFName)
 			err = nil
 			break
