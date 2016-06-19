@@ -11,7 +11,7 @@ func newTAP(ifName string) (*Interface, error) {
 }
 
 func newTUN(ifName string) (*Interface, error) {
-	return nil, errors.New("water: tap interface not implemented on this platform")
+	return nil, errors.New("water: tup interface not implemented on this platform")
 }
 
 func setPersistent(fd uintptr, persistent bool) error {

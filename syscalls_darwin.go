@@ -35,7 +35,7 @@ func newTAP(ifName string) (ifce *Interface, err error) {
 }
 
 // Create a new TUN interface whose name is ifName.
-// If ifName is empty, a default name (tap0, tap1, ... ) will be assigned.
+// If ifName is empty, a default name (utun0, utun1, ... ) will be assigned.
 // ifName should not exceed 16 bytes.
 func newTUN(ifName string) (ifce *Interface, err error) {
 	name, file, err := createInterface(ifName)
@@ -66,7 +66,7 @@ func createInterface(ifName string) (createdIFName string, file *os.File, err er
 		if gserr != 0 {
 			continue
 		} else {
-			createdIFName := C.GoStringN(readBuf, C.int(readBufLen))
+			createdIFName = C.GoStringN(readBuf, C.int(readBufLen))
 
 			fmt.Printf("Try num: %d\n", utunnum)
 			fmt.Printf("Fd: %d\n", conn.Fd)
